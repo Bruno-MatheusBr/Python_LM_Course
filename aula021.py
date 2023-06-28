@@ -1,16 +1,14 @@
-entrada = input('Digite E para Entrar ou S para Sair: ')
-senha = input('Senha: ')
-print(entrada)
+entrada = input("Digite E para Entrar ou S para Sair: ")
 
-if entrada == 'E':
-    print(senha)
-    if senha == '1234':
-        print('Você entrou.')
+
+if entrada == "E" or "e":
+    senha = input("Senha: ")
+    if senha == "1234":
+        print("Você entrou.")
     else:
-        print('Senha incorreta.')
+        print("Senha incorreta.")
 
-else entrada == 'S':
-    print('Você saiu')
-# else:
-   # print('Por favor, digite E ou S')
-
+elif entrada == "S" or "s":
+    print("Você saiu")
+else:
+    print("Por favor, digite E ou S")
