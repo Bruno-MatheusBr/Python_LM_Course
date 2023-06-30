@@ -1,8 +1,8 @@
-'''
+"""
 Introdução ao try/except
 try -> tenta executar um código.
 except -> ocorreu algum erro ao executar o código.
-'''
+"""
 
 # print(123)
 # print(456)
@@ -13,13 +13,14 @@ except -> ocorreu algum erro ao executar o código.
 
 # print(f'O dobro de {numero} é {numero_inteiro * 2}') #toda essa expressão resulta erro se digitado uma letra.
 
-numero_str = input('Vou dobrar o número que vc digitar: ')
+print("Vou dobrar o número que vc digitar!")
+numero_str = input("Digite um número: ")
 
 try:
     numero_real = float(numero_str)
-    print(f'O dobro de {numero_str} é {numero_real * 2:.2f}')
+    numero_dobrado = numero_real * 2
+    print(f"O valor dobrado de {numero_real:.2f} é {numero_dobrado:.2f}.")
 
 except:
-    print('O valor digitado não é um número')
-
-# float('a')
+    print("Você não digitou um número.")
+    print("Por favor, digite um número.")
