@@ -14,9 +14,6 @@ inteiro, informe que não é um número inteiro.
 #     print('O número digitado não é um número inteiro.')
 
 
-
-
-
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
 descrito, exiba a saudação apropriada. Ex. 
@@ -42,15 +39,51 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
 
-name = input('Escreva seu primeiro nome: ')
-name_lenght = len(name)
+# name = input('Escreva seu primeiro nome: ')
+# name_lenght = len(name)
 
-if name_lenght > 1:
-    if name_lenght <= 4:
-        print('Seu nome é muito curto.')
-    elif name_lenght <= 6:
-        print('Seu nome é correto.')
-    else:
-        print('Seu nome é muito grande.')
+# if name_lenght > 1:
+#     if name_lenght <= 4:
+#         print('Seu nome é muito curto.')
+#     elif name_lenght <= 6:
+#         print('Seu nome é correto.')
+#     else:
+#         print('Seu nome é muito grande.')
+# else:
+#     print('Digite pelo menos duas letras.')
+
+# Exercício 01
+
+# numero = input("Por favor, digite um número inteiro: ")
+# try:
+#     numero_int = int(numero)
+
+#     if numero_int % 2 == 0:
+#         print(f"O número {numero} é par.")
+#     else:
+#         print(f"O número {numero} é impar.")
+# except:
+#     print("Você não digitou um número inteiro.")
+
+# hora = input("Qual a hora? ")
+# try:
+#     hora_int = int(hora)
+
+#     if hora_int < 12:
+#         print("Bom dia!")
+#     elif hora_int >= 12 and hora_int < 18:
+#         print("Boa tarde!")
+#     else:
+#         print("Boa noite!")
+# except:
+#     print("Você não digitou a hora corretamente!")
+
+nome = input("Por favor, digite seu nome: ")
+tamanho_do_nome = len(nome)
+
+if tamanho_do_nome <= 4:
+    print("Seu nome é muito pequeno.")
+elif tamanho_do_nome > 4 and tamanho_do_nome < 7:
+    print("Seu nome é normal.")
 else:
-    print('Digite pelo menos duas letras.')
+    print("Seu nome é muito grande.")
