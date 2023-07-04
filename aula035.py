@@ -1,7 +1,7 @@
 contador = 0
 
-while contador < 30:
-    contador = contador + 1
+while contador < 10:
+    contador += 1
     print(contador)
 
-print('Acabou!!!')
+print("Acabou, uhull!!!")
