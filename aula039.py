@@ -1,13 +1,24 @@
-# Exercício de While
+# # Exercício de While
 
-nome = 'Bruno Matheus'
-tamanho = len(nome)
+# nome = "Bruno Matheus"
+# tamanho = len(nome)
+# indice = 0
+# novo_nome = ""
+
+# while indice < tamanho:
+#     letra = nome[indice] + "*"
+#     novo_nome += letra  # novo_nome = novo_nome + letra
+#     indice += 1
+
+# print(novo_nome)
+
+nome = "Bruno Matheus"
+nome_len = len(nome)
 indice = 0
-novo_nome = ''
+novo_nome = ""
 
-while indice < tamanho:
-    letra = nome[indice] + "*"
-    novo_nome += letra  # novo_nome = novo_nome + letra
+while indice < nome_len:
+    novo_nome += nome[indice] + "*"
     indice += 1
 
 print(novo_nome)
