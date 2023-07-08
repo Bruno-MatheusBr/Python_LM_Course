@@ -56,22 +56,36 @@ while calcular:
     numero1 = input("Digite um número: ")
     numero2 = input("Digite outro número: ")
     operador = input("Digite o operador: ")
-    numero1_float = float(numero1)
-    numero2_float = float(numero2)
 
-    if operador == "+":
-        print(f"{numero1_float} + {numero2_float} = {numero1_float + numero2_float}")
-    elif operador == "-":
-        print(f"{numero1_float} - {numero2_float} = {numero1_float - numero2_float}")
-    elif operador == "*":
-        print(f"{numero1_float} * {numero2_float} = {numero1_float * numero2_float}")
-    else:
-        print(f"{numero1_float} / {numero2_float} = {numero1_float / numero2_float}")
+    try:
+        numero1_float = float(numero1)
+        numero2_float = float(numero2)
 
-    sair = input('Deseja sair? Digite "s" para Sair ou "n" para continuar: ')
-    sair = sair.lower()
-    if sair == "s":
-        break
-    else:
-        continue
+        if operador == "+":
+            print(
+                f"{numero1_float} + {numero2_float} = {numero1_float + numero2_float}"
+            )
+        elif operador == "-":
+            print(
+                f"{numero1_float} - {numero2_float} = {numero1_float - numero2_float}"
+            )
+        elif operador == "*":
+            print(
+                f"{numero1_float} * {numero2_float} = {numero1_float * numero2_float}"
+            )
+        else:
+            print(
+                f"{numero1_float} / {numero2_float} = {numero1_float / numero2_float}"
+            )
+
+        sair = input('Deseja sair? Digite "s" para Sair ou "n" para continuar: ')
+        sair = sair.lower()
+        if sair == "s":
+            break
+        else:
+            continue
+    except:
+        print("Você não digitou um número válido. Por favor tente novamente")
+    continue
+
 print("Você saiu!")
